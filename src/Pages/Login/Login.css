@@ -1,0 +1,44 @@
+.login{
+    background-color: #FAFAFC;
+}
+.login div{
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.login div h2{
+    color: #6AD0A4;
+    padding-bottom: 10px;
+}
+.login div div{
+    padding: 10px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.login div input{
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #6AD0A4;
+    padding: 5px;
+    color: #000;
+}
+.login-btn{
+    background-color: #6AD0A4;
+    border-radius: 20px;
+}
+.icon-btn button{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px gray;
+}
+.icon-btn button:hover{
+    box-shadow: 5px 5px 10px gray;
+}
