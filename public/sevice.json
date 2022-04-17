@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co/SBtN1hF/residence.jpg",
+        "name": "Residence House Design",
+        "text": "To satisfy your self living a house then you should need an uniq planing and design which satisfying you. I will provide you an uniq design to exceptional to all of others. My design is 3D autocade animation.",
+        "price": 500000
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co/v31GZY4/modern-flat.jpg",
+        "name": "Modern Flat Design",
+        "text": "There is nothing like staying at home for real comfort. The modern design has being satisfying your heart and soul. Modern flat is design is with 3D autocade animation.",
+        "price": 100000
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co/qRNCcH6/museum.jpg",
+        "name": "Museum Design",
+        "text": " If you want to planing to design a museum, then I can help you as an architect you design for the present, with an awareness of the past, for a future which is essentially unknown. My design is 3D autocade available.",
+        "price": 100000
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co/D8GJkL6/shopping-mall.jpg",
+        "name": "Shopping Mall Design",
+        "text": "When you need a quality oriented work with believing design in the present world. I will provide you an uniq design to exceptional to all of others. My design is 3D autocade available.",
+        "price": 100000
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co/DLGKCd6/banglo.jpg",
+        "name": "Banglo Design",
+        "text": "Nothing can bring a real sense of security into the home except true love. With my interior design you can satisfied what you want. My design is 3D autocade available.",
+        "price": 100000
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co/YLZc55g/convention-center.jpg",
+        "name": "Convention Center Design",
+        "text": "To get attention from all of people you need to create a convention center with eye catching design. It would be helpful for you business when your design is exceptional. My design is 3D autocade available.",
+        "price": 100000
+    }
+]
