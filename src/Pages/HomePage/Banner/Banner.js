@@ -5,7 +5,7 @@ import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className='banner d-flex text-center justify-content-center align-items-center position-relative p-5'>
+        <div className='banner d-flex text-center justify-content-center align-items-center position-relative p-5 mb-5'>
             <Container className='position-absolute top-50'>
                 <h2 className='text-white fw-bold fs-2'>To Get Exceptional Design and Planning!!</h2>
                 <p className='m-0 fs-5 fw-normal text-white'>When you need to comport to make an eye catching and an exceptional design</p>

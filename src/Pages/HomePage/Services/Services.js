@@ -1,10 +1,22 @@
 import React from 'react';
+import './Services.css';
+import { Container } from 'react-bootstrap';
+import UseService from '../../../Hooks/UseService';
+import Service from '../Service/Service';
 
 const Services = () => {
+
+    const [service, setService] = UseService();
+
     return (
-        <div>
-            <h2>Services Part</h2>
-        </div>
+        <Container className='services-container'>
+            {
+                service.map(service => <Service
+                    service={service}
+                    key={service.id}
+                ></Service>)
+            }
+        </Container>
     );
 };
 
