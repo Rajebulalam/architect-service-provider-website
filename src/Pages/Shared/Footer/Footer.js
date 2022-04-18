@@ -1,18 +1,15 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import './Footer.css';
+import { Container } from 'react-bootstrap';
 
 const Footer = () => {
     return (
         <div className='bg-dark py-4'>
             <Container>
-                <Row>
-                    <Col>
-                        <p className='text-white'>Rajebul Alam Khokan</p>
-                    </Col>
-                    <Col>
-                        <p className='text-white text-end'>&copy; Copy right reserved 2022</p>
-                    </Col>
-                </Row>
+                <div className='footer'>
+                    <p className='text-white'>Rajebul Alam Khokan</p>
+                    <p className='text-white'>&copy; Copy right reserved 2022</p>
+                </div>
             </Container>
         </div>
     );

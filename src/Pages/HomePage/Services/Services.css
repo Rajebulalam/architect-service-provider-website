@@ -1,7 +1,16 @@
-.services-container{
+.services-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
     padding: 0;
 }
-.services-container{}
+
+
+@media only screen and (min-width: 220px) and (max-width: 667px) {
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0;
+        padding: 0 10px;
+    }
+}
