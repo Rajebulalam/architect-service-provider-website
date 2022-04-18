@@ -10,10 +10,10 @@ const Login = () => {
             <div>
                 <h2 className='text-center'>Login Please!</h2>
                 <div>
-                    <input type="email" name="email" id="" placeholder='Email' />
+                    <input required type="email" name="email" id="" placeholder='Email' />
                 </div>
                 <div>
-                    <input type="password" name="Password" id="" placeholder='Password' />
+                    <input required type="password" name="Password" id="" placeholder='Password' />
                 </div>
                 <p className='text-center p-3 text-primary cursor-pointer'>Forget Password</p>
                 <button className='login-btn text-white w-100 d-block border-0 p-2 fw-bolder' type="submit">Login</button>
