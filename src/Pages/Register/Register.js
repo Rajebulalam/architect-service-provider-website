@@ -5,38 +5,47 @@ import facebookIcon from '../../images/facebook.png';
 import auth from '../../firebase.init';
 import { useAuthState, useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
+    // Set Email, Password, Confirm Password, Error
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [err, setErr] = useState('');
+
+    // Create user by react firebase hooks
     const [
         createUserWithEmailAndPassword,
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
+    // Get User
     const [user] = useAuthState(auth);
     const navigate = useNavigate();
 
+    // Take email from user
     const handleEmail = event => {
         setEmail(event.target.value);
         console.log(event.target.value);
     }
 
+    // Take password from user
     const handlePassword = event => {
         setPassword(event.target.value);
         console.log(event.target.value);
     }
 
+    // Take confirm password from user
     const handleConfirmPassword = event => {
         setConfirmPassword(event.target.value);
         console.log(event.target.value);
     }
 
+    // Submit form
     const handleSubmit = async (event) => {
         event.preventDefault();
         if (!/^(?=^.{8,}$)(?=.*[0-9])(?=.+[a-z])(?=.*[A-Z])(?=.*[!@#$%^&amp;*()_+}{&quot;:;&gt;.&lt;;,]).{1,}$/.test(password)) {
@@ -52,6 +61,7 @@ const Register = () => {
         }
     }
 
+    // If user after register take him into home page
     if (user) {
         navigate('/home');
     }
@@ -82,7 +92,6 @@ const Register = () => {
                         <p className='text-danger'> {error?.message} </p>
                         <p> {loading && 'Loading ...'} </p>
                     </div>
-                    <ToastContainer />
                     <button className='login-btn text-white w-100 d-block border-0 p-2 fw-bolder' type="submit">Register</button>
                     <div>
                         <p className='text-center mt-2'>or sign in with</p>

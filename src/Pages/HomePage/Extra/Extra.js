@@ -1,5 +1,4 @@
 import React from 'react';
-import './Extra.css';
 import instrument from '../../../images/instrument.png';
 import { Container } from 'react-bootstrap';
 

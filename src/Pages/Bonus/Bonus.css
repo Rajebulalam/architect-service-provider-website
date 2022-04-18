@@ -1,0 +1,20 @@
+.bonus{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+.bonus div img{
+    max-width: 500px;
+    width: 100%;
+}
+.bonus p{
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 220px) and (max-width: 667px) {
+	.bonus{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}
