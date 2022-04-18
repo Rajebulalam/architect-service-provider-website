@@ -3,7 +3,7 @@ import './Login.css';
 import googleIcon from '../../images/google.png';
 import githubIcon from '../../images/github.png';
 import facebookIcon from '../../images/facebook.png';
-import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -58,6 +58,9 @@ const Login = () => {
         }
     }
 
+    // Sign In With Google
+    const [signInWithGoogle] = useSignInWithGoogle(auth);
+
     return (
         <div className='login'>
             <div className='py-5'>
@@ -80,7 +83,7 @@ const Login = () => {
                     <div>
                         <p className='text-center mt-2'>or sign in with</p>
                         <div className='icon-btn text-center'>
-                            <button className=' border-0'> <img src={googleIcon} alt="google-icon" /> </button>
+                            <button onClick={() => signInWithGoogle()} className=' border-0'> <img src={googleIcon} alt="google-icon" /> </button>
                             <button className=' border-0 mx-2'> <img src={githubIcon} alt="github-icon" /> </button>
                             <button className=' border-0'> <img src={facebookIcon} alt="facebook-icon" /> </button>
                         </div>
