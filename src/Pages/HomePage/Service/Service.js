@@ -11,7 +11,7 @@ const Service = ({ service }) => {
             <h2 className='mt-3'> {name} </h2>
             <p> {text} </p>
             <h4 className='mb-3'>Price : $ {price} </h4>
-            <button type='btn' className='btn btn-warning text-black fw-bolder px-5 py-3'>Check Out</button>
+            <button type='btn' className='btn btn-warning text-black fw-bolder px-4 py-2'>Check Out</button>
         </div>
     );
 };
