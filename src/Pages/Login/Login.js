@@ -5,8 +5,8 @@ import githubIcon from '../../images/github.png';
 import facebookIcon from '../../images/facebook.png';
 import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-import { Link, useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
@@ -43,10 +43,14 @@ const Login = () => {
         }
     }
 
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
+    // Forget Password
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
     const sendPassword = async () => {
@@ -65,10 +69,10 @@ const Login = () => {
     const [signInWithGithub] = useSignInWithGithub(auth);
 
     return (
-        <div className='login'>
-            <div className='py-5'>
+        <div className='login py-5'>
+            <div className='py-3'>
                 <h2 className='text-center'>Login Please!</h2>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSubmit} >
                     <div>
                         <input onBlur={handleEmail} required type="email" name="email" id="" placeholder='Email' />
                     </div>

@@ -9,7 +9,7 @@ const Services = () => {
     const [service, setService] = UseService();
 
     return (
-        <Container className='services-container'>
+        <Container className='services-container mb-5'>
             {
                 service.map(service => <Service
                     service={service}
