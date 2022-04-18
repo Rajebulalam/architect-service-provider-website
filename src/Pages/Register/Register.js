@@ -45,7 +45,7 @@ const Register = () => {
         } else {
             if (password === confirmPassword) {
                 await createUserWithEmailAndPassword(email, password)
-                toast('Sent Email');
+                toast('Sent A Verification Email');
             } else {
                 setErr('Your password does not match!')
             }
