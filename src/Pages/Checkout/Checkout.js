@@ -7,10 +7,10 @@ import 'react-toastify/dist/ReactToastify.css';
 const Checkout = () => {
 
 
-
+    // Submit Information
     const handleSubmit = event => {
         event.preventDefault();
-        toast("Successfully Checkout");
+        toast("Thank you for the booking.");
     }
 
     return (

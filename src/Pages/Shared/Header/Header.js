@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import { Container, Nav, Navbar, TabContainer } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -11,8 +11,10 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Header = () => {
 
+    // To get user
     const [user] = useAuthState(auth);
 
+    // log out after clicking Log out button
     const logOut = async () => {
         await signOut(auth);
         toast('Log out success fully!!');
