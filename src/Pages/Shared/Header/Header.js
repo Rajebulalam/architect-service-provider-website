@@ -30,6 +30,7 @@ const Header = () => {
                         <Nav.Link className='px-3 text-white' as={Link} to='/checkout'>Checkout</Nav.Link>
                         <Nav.Link className='px-3 text-white' as={Link} to='/blogs'>Blogs</Nav.Link>
                         <Nav.Link className='px-3 text-white' as={Link} to='/about'>About Me</Nav.Link>
+                        <Nav.Link className='px-3 text-white' as={Link} to='/about'>About Me</Nav.Link>
                         <Nav.Link className='px-3 bg-white btn mx-2 mb-2 btn-primary  text-dark' as={Link} to='/register'>Register</Nav.Link>
                         {
                             user ? <Nav.Link onClick={logOut} className='px-3 bg-white btn btn-primary  text-dark mx-2 mb-2' as={Link} to='/login'>Log out</Nav.Link> : <Nav.Link className='px-3 bg-white btn btn-primary  text-dark mx-2 mb-2' as={Link} to='/login'>Login</Nav.Link>
