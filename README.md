@@ -4,6 +4,9 @@ Architect Portfolio project live site link [Architect Portfolio](https://artchit
 
 Project Featured :
 
+* Created an architect service services system with fresh and clean code.
+* Developed with responsiveness for all devices and optimized.
+* Login system implement by using firebase authentication.
 * Architect Portfolio project is created on react and firebase based.
 * This project has a home page , blog page, about page, registration and login page.
 * The home page contain responsive nav bar, banner, service section and also footer.
